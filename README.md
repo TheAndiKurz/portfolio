@@ -1,6 +1,6 @@
 # Portfolio Webpage
 
-This page is Deployed on `andikurz.dev` it should soon also be deployed on `andikurz.it`.
+This page is Deployed on `[andikurz.dev](https://andikurz.dev)` it should soon also be deployed on `andikurz.it`.
 
 ## Available Scripts
 
