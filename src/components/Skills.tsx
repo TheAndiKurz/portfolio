@@ -51,6 +51,11 @@ export default function Skills() {
 
   const skills: Accessor<Skill[]> = () => [
     {
+      logo: "/skills/python.svg",
+      name: "Python",
+      from: ""
+    },
+    {
       logo: "/skills/c.svg",
       name: "C",
       from: "Uni"
@@ -71,11 +76,6 @@ export default function Skills() {
       from: "Uni"
     },
     {
-      logo: "/skills/solidjs.svg",
-      name: "SolidJS",
-      from: ""
-    },
-    {
       logo: "/skills/js.svg",
       name: "Javascript",
       from: "TSG"
@@ -84,6 +84,11 @@ export default function Skills() {
       logo: "/skills/typescript.svg",
       name: "Typescript",
       from: "TSG"
+    },
+    {
+      logo: "/skills/solidjs.svg",
+      name: "SolidJS",
+      from: ""
     },
     {
       logo: "/skills/react.svg",
