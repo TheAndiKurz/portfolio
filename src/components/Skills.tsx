@@ -67,7 +67,12 @@ export default function Skills() {
     },
     {
       logo: "/skills/csharp.svg",
-      name: ".NET C#",
+      name: "C#",
+      from: "TSG"
+    },
+    {
+      logo: "/skills/dotnet.svg",
+      name: ".NET",
       from: "TSG"
     },
     {
@@ -132,12 +137,18 @@ export default function Skills() {
     }
   ];
 
+  const sortedSkills = () => 
+    skills().sort((a, b) => a.name.localeCompare(b.name, "de-DE", {
+      "sensitivity": "base"
+    }));
+
   return (
     <>
       <SubTitle>Fähigkeiten</SubTitle>
 
       <CardContainer>
-        { skills().map(skill => <Card {...skill} />) }
+        { sortedSkills()
+            .map(skill => <Card {...skill} />) }
       </CardContainer>
     </>
   );
