@@ -1,3 +1,4 @@
+import { createSignal } from "solid-js";
 import SubTitle from "./common/SubTitle";
 
 function getAge(birthday: Date) {
@@ -22,13 +23,13 @@ function getAge(birthday: Date) {
 
 export default function AboutMe() {
   const birthday = new Date("2002-06-12");
-  const age = getAge(birthday);
+  const [age, _] = createSignal(getAge(birthday));
   return (
     <>
       <SubTitle>Über Mich</SubTitle>
 
       <p class="my-2">
-        Hallo, ich bin Andreas Kurz, {age} Jahre alt und 
+        Hallo, ich bin Andreas Kurz, {age()} Jahre alt und 
         ein leidenschaftlicher Softwareentwickler. 
         Schon früh habe ich meine Begeisterung für Technik und 
         Programmierung entdeckt und mein Hobby zum Beruf gemacht.
