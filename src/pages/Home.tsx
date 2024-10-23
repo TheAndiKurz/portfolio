@@ -13,9 +13,17 @@ export default function Home() {
         <Title>Andi Kurz</Title>
       </MetaProvider>
 
-      <PageTitle>Hallo!</PageTitle>
       <div class="flex justify-center">
         <div class="w-[42rem] mx-4 text-justify">
+          <div class="min-h-[75vh] flex items-center">
+            <div class="w-full flex items-center gap-4 justify-around flex-wrap">
+              <div class="w-[21rem] max-w-[90vw]">
+                <img src="/me/profile-pic.jpeg" />
+              </div>
+              <PageTitle>Hallo!</PageTitle>
+            </div>
+          </div>
+
           <AboutMe />
           <Education />
           <Career />
