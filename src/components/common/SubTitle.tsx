@@ -6,6 +6,6 @@ export default function SubTitle(props: {
 }) {
   const c = children(() => props.children);
   return (
-    <h3 class="max-4-xs text-4xl text-amber-700 dark:text-amber-300 font-thin my-10">{c()}</h3>
+    <h3 class="max-4-xs text-4xl text-amber-600 dark:text-amber-300 font-thin my-10">{c()}</h3>
   ); 
 }

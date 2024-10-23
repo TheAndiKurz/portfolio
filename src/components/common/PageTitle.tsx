@@ -6,6 +6,6 @@ export default function PageTitle(props: {
 }) {
   const c = children(() => props.children);
   return (
-    <h1 class="text-center max-6-xs text-6xl text-amber-600 dark:text-amber-400 font-semibold uppercase my-16">{c()}</h1>
+    <h1 class="text-center max-6-xs text-6xl text-amber-500 dark:text-amber-400 font-semibold uppercase my-16">{c()}</h1>
   ); 
 }
