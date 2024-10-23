@@ -1,8 +1,8 @@
 import { Route, Router } from "@solidjs/router";
 import { Suspense } from "solid-js";
 import Nav from "./components/Nav";
-import NotFound from "./routes/[...404]";
-import Home from "./routes";
+import NotFound from "./pages/[...404]";
+import Home from "./pages/Home";
 
 export default function Routing() {
   return (
