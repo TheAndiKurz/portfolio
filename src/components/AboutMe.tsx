@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js";
+import { createSignal, onCleanup, onMount } from "solid-js";
 import SubTitle from "./common/SubTitle";
 
 function getAge(birthday: Date) {
@@ -23,7 +23,11 @@ function getAge(birthday: Date) {
 
 export default function AboutMe() {
   const birthday = new Date("2002-06-12");
-  const [age, _] = createSignal(getAge(birthday));
+  const [age, setAge] = createSignal(getAge(birthday));
+  const interval = setInterval(() => setAge(getAge(birthday)), 10000);
+
+  onCleanup(() => clearInterval(interval));
+  
   return (
     <>
       <SubTitle>Über Mich</SubTitle>
