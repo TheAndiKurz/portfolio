@@ -61,15 +61,15 @@ function getLogos(theme: Theme): LogoType {
   switch (theme) {
     case Theme.DARK:
       return { 
-        uibk: "/uibk-white.svg",
-        osz: "/osz-schlanders-white.svg",
-        ms: "/mittelschule-schlanders-white.png",
+        uibk: "/education/uibk-white.svg",
+        osz: "/education/osz-schlanders-white.svg",
+        ms: "/education/mittelschule-schlanders-white.png",
       };
     case Theme.LIGHT:
       return { 
-        uibk: "/uibk.svg",
-        osz: "/osz-schlanders.svg",
-        ms: "/mittelschule-schlanders.png",
+        uibk: "/education/uibk.svg",
+        osz: "/education/osz-schlanders.svg",
+        ms: "/education/mittelschule-schlanders.png",
       };
   }
 }
