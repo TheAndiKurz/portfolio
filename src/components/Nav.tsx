@@ -13,9 +13,6 @@ export default function Nav() {
               <img src="/logo.svg" width="50px" />
             </A>
           </li>
-          <li class={`border-b-2 ${active("/projects")} mx-1.5 sm:mx-6`}>
-            <A href="/projects">Projects</A>
-          </li>
         </ul>
         <ul class="flex items-center p-3 text-gray-200">
           <li class="mx-1.5 sm:mx-6">
