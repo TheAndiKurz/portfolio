@@ -9,10 +9,6 @@ export default function NotFound() {
         <A href="/" class="text-sky-600 hover:underline">
           Home
         </A>
-        {" - "}
-        <A href="/projects" class="text-sky-600 hover:underline">
-          Projects Page
-        </A>
       </p>
     </>
   );
