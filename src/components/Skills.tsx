@@ -1,4 +1,4 @@
-import { Accessor, children, Component, JSX } from "solid-js";
+import { Accessor, children, JSX } from "solid-js";
 import SubTitle from "./common/SubTitle"
 import { Theme, useThemes } from "../providers/ThemeProvider";
 
@@ -50,6 +50,11 @@ export default function Skills() {
   const [theme, _] = useThemes();
 
   const skills: Accessor<Skill[]> = () => [
+    {
+      logo:"/skills/java.svg",
+      name: "Java",
+      from: "Uni"
+    },
     {
       logo: "/skills/python.svg",
       name: "Python",
