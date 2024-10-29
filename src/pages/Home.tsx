@@ -5,6 +5,7 @@ import Education from "../components/Education";
 import Career from "../components/Career";
 import Skills from "../components/Skills";
 import Hobbies from "../components/Hobbies";
+import HardFacts from "../components/HardFacts";
 
 export default function Home() {
   return (
@@ -21,10 +22,14 @@ export default function Home() {
                 <img src="/me/profile-pic.jpeg" />
               </div>
               <PageTitle>Hallo!</PageTitle>
+              <div class="w-full text-center">
+                <HardFacts />
+              </div>
             </div>
           </div>
 
           <AboutMe />
+          <Hobbies />
           <Education />
           <Career />
           <Skills />

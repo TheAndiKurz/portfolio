@@ -1,6 +1,6 @@
 import { children, JSX } from "solid-js";
 
-export default function SubSubTitle(props: {
+export default function CardTitle(props: {
   children: JSX.Element
 }) {
   const c = children(() => props.children);
