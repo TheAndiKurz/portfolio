@@ -1,4 +1,3 @@
-import SubSubTitle from "./common/SubSubTitle";
 import SubTitle from "./common/SubTitle";
 
 export default function AboutMe() {
@@ -7,7 +6,7 @@ export default function AboutMe() {
       <SubTitle>Über Mich</SubTitle>
 
       <p class="my-2">
-        Hallo, ich bin Andreas Kurz 
+        Hallo, ich bin Andreas Kurz,
         ein leidenschaftlicher Softwareentwickler. 
         Schon früh habe ich meine Begeisterung für Technik und 
         Programmierung entdeckt und mein Hobby zum Beruf gemacht.
