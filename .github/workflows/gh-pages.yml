@@ -38,8 +38,9 @@ jobs:
       # Step 3: Install dependencies and build the project
       - name: Install dependencies and build
         run: |
+          export VITE_BASE_PATH=/portfolio/
           bun install
-          bun run build  # Replace with your app's build command
+          bun run build
 
       # Step 4: Upload artifact to Pages
       - name: Upload artifact to GitHub Pages

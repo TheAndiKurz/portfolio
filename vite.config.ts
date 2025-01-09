@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 // import devtools from 'solid-devtools/vite';
+import { defineConfig } from 'vite';
+import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
   plugins: [
@@ -11,6 +13,7 @@ export default defineConfig({
     // devtools(),
     solidPlugin(),
   ],
+  base: process.env.VITE_BASE_PATH || '/', // Use the env variable, fallback to '/'
   server: {
     port: 3000,
   },
